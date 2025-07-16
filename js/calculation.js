@@ -7,6 +7,7 @@ $.when($.ready).then(function () {
         var ll = $("#input_ll").val(); //力量属性点
 
         var result = level * gjzz * (1.4 + 1 * cz) / 750 + ll * cz;
+        result = financial(result);
 
         $("#span_result_gj").text(result);
     });
@@ -18,6 +19,7 @@ $.when($.ready).then(function () {
         var tz = $("#input_tz").val(); //体质属性点
 
         var result = level * tlzz / 1000 + tz * cz * 6;
+        result = financial(result);
 
         $("#span_result_qx").text(result);
     });
@@ -29,6 +31,7 @@ $.when($.ready).then(function () {
         var nl = $("#input_nl").val(); //耐力属性点
 
         var result = level * fyzz * (9.4 + 19 / 3 * cz) / 7500 + nl * cz * 4 / 3;
+        result = financial(result);
 
         $("#span_result_fy").text(result);
     });
@@ -40,9 +43,14 @@ $.when($.ready).then(function () {
         var mj = $("#input_mj").val(); //敏捷属性点
 
         var result = mj * sdzz / 1000;
+        result = financial(result);
 
         $("#span_result_sd").text(result);
     });
+
+    function financial(x) {
+      return Number.parseFloat(x).toFixed(2);
+    }
 
 });
 
