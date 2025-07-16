@@ -1,0 +1,50 @@
+.span-info {
+    color: red;
+}
+
+.span-split {
+    color: darkblue;
+}
+
+.span-title {
+    color: darkcyan;
+}
+
+.lable-title {
+    color: darkcyan;
+}
+
+.span-unit {
+    margin-right: 10px;
+}
+
+.input-text-small {
+    width: 80px;
+}
+
+.input-text-medium {
+    width: 160px;
+}
+
+.div-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+select {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.btn-small {
+    padding : 5px;
+    /** font-size: 5px; **/
+}
+
+.btn-medium {
+    padding : 10px;
+}
+
+.btn-large {
+    padding : 20px;
+}
